@@ -4,6 +4,8 @@ import { useProductos } from './Hooks/useProductos'
 import TableList, { ModalConfirm, ProductoForm } from './Components/TableList'
 import type { Producto } from './Components/index'
 import { CATEGORIAS, CATEGORIA_ICONS } from './Components/index'
+import MusicPlayer from './Components/MusicPlayer'
+import './Components/MusicPlayer/MusicPlayer.css'
 import './App.css'
 
 const TODAS = 'Todos'
@@ -190,6 +192,8 @@ export default function App() {
           {toast.tipo === 'error' ? '❌' : '✅'} {toast.msg}
         </div>
       )}
+      
+      <MusicPlayer />
     </div>
   )
 }
